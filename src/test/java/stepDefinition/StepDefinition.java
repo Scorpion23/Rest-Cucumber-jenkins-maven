@@ -171,6 +171,21 @@ public class StepDefinition extends Utils {
 		Assert.assertEquals(Actualdeleteresp, expectedDelmessage);
 		
 	}
+	
+	@Then("And Verify the time")
+	public void And_Verify_the_time() {
+		
+		
+		
+	}
+	
+	
+	@Then("Verify the time")
+	public void verify_the_time() {
+		 long c = response.getTime();
+		 System.out.println("The response time in milliseconds is "+c);
+	}
+
 
 	@DataProvider(name = "BooksData")
 

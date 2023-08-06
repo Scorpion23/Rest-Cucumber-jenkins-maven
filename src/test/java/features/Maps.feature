@@ -8,6 +8,7 @@ Scenario Outline: verify if place is being Successfully added using AddPlaceAPI
     And "status" in response body is "OK"
     And "Scope" in response body is "APP"
     And check placeid maps to the "<name>" using "getPlaceAPI"
+    And Verify the time
 
 Examples:
 
@@ -22,7 +23,7 @@ Given Put place payload with place-id,key and "address"
 When User calls "putPlaceAPI" with "PUT" http request
 Then the API call got success with status code 200
 And check if "msg" is "Address successfully updated"
-
+ And Verify the time
 Examples:
 
 |address|
@@ -36,3 +37,4 @@ Given DeletePlace payload
 When User calls "deletePlaceAPI" with "DELETE" http request
 Then the API call got success with status code 200
 And "status" in the response body is "OK"
+ And Verify the time
