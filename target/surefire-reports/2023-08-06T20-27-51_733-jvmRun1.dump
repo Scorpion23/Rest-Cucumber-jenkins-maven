@@ -1,0 +1,22 @@
+# Created at 2023-08-06T20:27:52.417
+java.lang.NullPointerException: Cannot invoke "java.lang.Class.isEnum()" because "componentType" is null
+	at java.base/sun.reflect.annotation.AnnotationParser.parseArray(AnnotationParser.java:528)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseMemberValue(AnnotationParser.java:352)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:282)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.Class.createAnnotationData(Class.java:4068)
+	at java.base/java.lang.Class.annotationData(Class.java:4057)
+	at java.base/java.lang.Class.getAnnotation(Class.java:3940)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.hasJunit4RunWithAnnotation(TestNGDirectoryTestSuite.java:217)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.isJunit4Test(TestNGDirectoryTestSuite.java:212)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.isJUnitTest(TestNGDirectoryTestSuite.java:207)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:174)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+
